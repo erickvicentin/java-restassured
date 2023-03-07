@@ -1,0 +1,59 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-07T03:13:08.126Z",
+        "line": 4,
+        "name": "Test GET to an endpoint",
+        "description": "",
+        "id": "api-testing;test-get-to-an-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 683224000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I send a GET request to the endpoint",
+            "match": {
+              "location": "Steps.Steps.sendGETRequest()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1365487000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get a 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 8
+                }
+              ],
+              "location": "Steps.Steps.expectedStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      }
+    ],
+    "name": "API TESTING",
+    "description": "",
+    "id": "api-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/APITest.feature",
+    "tags": []
+  }
+]
