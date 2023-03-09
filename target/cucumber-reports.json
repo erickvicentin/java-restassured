@@ -3,7 +3,171 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-03-09T17:53:11.684Z",
+        "start_timestamp": "2023-03-09T17:57:18.706Z",
+        "line": 4,
+        "name": "Test GET to an endpoint",
+        "description": "",
+        "id": "api-testing;test-get-to-an-endpoint",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 655869000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I send a GET request to the \"https://api.github.com\" URI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://api.github.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "Steps.Steps.sendGETRequest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1465311000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I get a 200 status code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 8
+                }
+              ],
+              "location": "Steps.Steps.expectedStatusCode(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-09T17:57:20.927Z",
+        "line": 9,
+        "name": "Validate users amount",
+        "description": "",
+        "id": "api-testing;validate-users-amount",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1357000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I send a GET request to the \"https://jsonplaceholder.typicode.com\" URI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "Steps.Steps.sendGETRequest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 293174000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I validate there are 10 items on the \"/users\" enpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 21
+                },
+                {
+                  "val": "\"/users\"",
+                  "offset": 37
+                }
+              ],
+              "location": "Steps.Steps.expectedItems(int,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-09T17:57:21.226Z",
+        "line": 14,
+        "name": "Validate user value is present",
+        "description": "",
+        "id": "api-testing;validate-user-value-is-present",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 770000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I send a GET request to the \"https://jsonplaceholder.typicode.com\" URI",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "Steps.Steps.sendGETRequest(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 442544000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I validate there is a value: \"Bret\" in the response at \"/users\" endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Bret\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"/users\"",
+                  "offset": 55
+                }
+              ],
+              "location": "Steps.Steps.validateValue(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@API"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-03-09T17:57:21.674Z",
         "line": 19,
         "name": "Validate user street is present",
         "description": "",
@@ -13,7 +177,7 @@
         "steps": [
           {
             "result": {
-              "duration": 575503000,
+              "duration": 2461000,
               "status": "passed"
             },
             "line": 20,
@@ -31,7 +195,7 @@
           },
           {
             "result": {
-              "duration": 1057212000,
+              "duration": 137610000,
               "status": "passed"
             },
             "line": 21,
