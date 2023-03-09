@@ -3,41 +3,51 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-03-07T03:13:08.126Z",
-        "line": 4,
-        "name": "Test GET to an endpoint",
+        "start_timestamp": "2023-03-09T17:53:11.684Z",
+        "line": 19,
+        "name": "Validate user street is present",
         "description": "",
-        "id": "api-testing;test-get-to-an-endpoint",
+        "id": "api-testing;validate-user-street-is-present",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 683224000,
+              "duration": 575503000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "I send a GET request to the endpoint",
+            "line": 20,
+            "name": "I send a GET request to the \"https://jsonplaceholder.typicode.com\" URI",
             "match": {
-              "location": "Steps.Steps.sendGETRequest()"
+              "arguments": [
+                {
+                  "val": "\"https://jsonplaceholder.typicode.com\"",
+                  "offset": 28
+                }
+              ],
+              "location": "Steps.Steps.sendGETRequest(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 1365487000,
+              "duration": 1057212000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "I get a 200 status code",
+            "line": 21,
+            "name": "I can validate the nested: \"Dayna Park\" on the response at \"/users\" endpoint",
             "match": {
               "arguments": [
                 {
-                  "val": "200",
-                  "offset": 8
+                  "val": "\"Dayna Park\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"/users\"",
+                  "offset": 59
                 }
               ],
-              "location": "Steps.Steps.expectedStatusCode(int)"
+              "location": "Steps.Steps.validateNestedValue(java.lang.String,java.lang.String)"
             },
             "keyword": "Then "
           }
