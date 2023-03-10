@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-03-09T17:57:18.706Z",
+        "start_timestamp": "2023-03-10T00:50:57.229Z",
         "line": 4,
         "name": "Test GET to an endpoint",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 655869000,
+              "duration": 612115000,
               "status": "passed"
             },
             "line": 5,
@@ -31,7 +31,7 @@
           },
           {
             "result": {
-              "duration": 1465311000,
+              "duration": 1351581000,
               "status": "passed"
             },
             "line": 6,
@@ -55,7 +55,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-03-09T17:57:20.927Z",
+        "start_timestamp": "2023-03-10T00:50:59.291Z",
         "line": 9,
         "name": "Validate users amount",
         "description": "",
@@ -65,7 +65,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1357000,
+              "duration": 736000,
               "status": "passed"
             },
             "line": 10,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 293174000,
+              "duration": 1768566000,
               "status": "passed"
             },
             "line": 11,
@@ -111,7 +111,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-03-09T17:57:21.226Z",
+        "start_timestamp": "2023-03-10T00:51:01.065Z",
         "line": 14,
         "name": "Validate user value is present",
         "description": "",
@@ -121,7 +121,7 @@
         "steps": [
           {
             "result": {
-              "duration": 770000,
+              "duration": 814000,
               "status": "passed"
             },
             "line": 15,
@@ -139,7 +139,7 @@
           },
           {
             "result": {
-              "duration": 442544000,
+              "duration": 860012000,
               "status": "passed"
             },
             "line": 16,
@@ -167,7 +167,7 @@
         ]
       },
       {
-        "start_timestamp": "2023-03-09T17:57:21.674Z",
+        "start_timestamp": "2023-03-10T00:51:01.930Z",
         "line": 19,
         "name": "Validate user street is present",
         "description": "",
@@ -177,7 +177,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2461000,
+              "duration": 1654000,
               "status": "passed"
             },
             "line": 20,
@@ -195,7 +195,7 @@
           },
           {
             "result": {
-              "duration": 137610000,
+              "duration": 531022000,
               "status": "passed"
             },
             "line": 21,
